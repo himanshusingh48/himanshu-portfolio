@@ -17,6 +17,19 @@ export default function Education() {
         <p className="text-slate-400 mt-1">
           Currently pursuing.
         </p>
+      </div> <br></br>
+      <div className="rounded-2xl glass p-8 shadow-glow">
+        <p className="text-slate-200 font-medium">
+          AVMD Institute — Intermediate
+          <p className="text-slate-400 mt-1">
+            Percentage - 7.47 Cgpa
+          </p>
+        </p>
+      </div> <br></br>
+      <div className="rounded-2xl glass p-8 shadow-glow">
+        <p className="text-slate-200 font-medium">
+          SMPKD English Medium School — Matriculation
+        </p>
       </div>
     </section>
   )

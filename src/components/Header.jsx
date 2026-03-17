@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, FileText } from 'lucide-react'
 
 const nav = [
   { id: 'about', label: 'About' },
@@ -39,14 +39,20 @@ export default function Header() {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className={`text-sm transition ${active===item.id ? 'text-white' : 'text-slate-300 hover:text-white'}`}
+                className={`text-sm transition ${active === item.id ? 'text-white' : 'text-slate-300 hover:text-white'}`}
               >
                 {item.label}
               </a>
             ))}
-            <span className="ml-4 text-xs rounded-full border border-white/10 px-3 py-1 text-slate-200">
-              Frontend Developer
-            </span>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-4 flex items-center gap-2 text-sm font-medium rounded-full bg-sky-500 hover:bg-sky-600 px-4 py-2 text-white transition-colors"
+            >
+              <FileText className="w-4 h-4" />
+              Resume
+            </a>
           </nav>
           <button className="md:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu">
             {open ? <X /> : <Menu />}
@@ -61,6 +67,16 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="w-full flex items-center justify-center gap-2 text-sm font-medium rounded-lg bg-sky-500 hover:bg-sky-600 px-4 py-2 text-white transition-colors mt-4"
+            >
+              <FileText className="w-4 h-4" />
+              Resume
+            </a>
           </div>
         </div>
       )}

@@ -24,7 +24,7 @@ export default function Hero() {
 
   return (
     <section className="section">
-      <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,26 +37,12 @@ export default function Hero() {
           <p className="mt-2 text-lg text-slate-300">
             <span className="text-white">{display}</span><span className="animate-pulse">|</span>
           </p>
-          <p className="mt-5 text-slate-300 leading-relaxed">
+          <p className="mt-5 text-slate-300 leading-relaxed max-w-2xl mx-auto">
             I craft elegant, accessible and high-performance web interfaces. Currently strengthening my MERN skills to build robust end‑to‑end products.
           </p>
-          <div className="mt-6 flex gap-3">
+          <div className="mt-6 flex justify-center gap-3">
             <a href="#projects" className="px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-600 transition shadow-glow">View Projects</a>
             <a href="#contact" className="px-5 py-2.5 rounded-xl glass">Contact</a>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="rounded-3xl glass p-8 shadow-glow bg-grid bg-[length:var(--tw-bg-size-grid)]"
-        >
-          <div className="aspect-[4/3] rounded-2xl glass grid place-items-center">
-            <div className="text-center">
-              <p className="text-sm text-slate-300">Portfolio Snapshot</p>
-              <p className="text-xl font-semibold mt-2">Clean • Modern • Fast</p>
-            </div>
           </div>
         </motion.div>
       </div>

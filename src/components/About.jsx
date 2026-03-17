@@ -12,14 +12,12 @@ export default function About() {
           transition={{ duration: 0.6 }}>
           <h2 className="text-3xl font-bold">About Me</h2>
           <p className="mt-4 text-slate-300 leading-relaxed">
-            I am a passionate <strong>Frontend Developer</strong> focused on crafting elegant, accessible and
-            high-performance web interfaces. I love turning ideas into clean, efficient code and intuitive user
-            experiences. Currently strengthening my <strong>MERN</strong> skills to build robust, end‑to‑end products.
+            I’m a <strong>Frontend Developer</strong> passionate about building
+            clean, responsive, and user-friendly web interfaces.
+            Currently improving my <strong>MERN stack</strong> skills to create
+            full-stack applications and deliver impactful user experiences.
           </p>
-          <p className="mt-3 text-slate-300 leading-relaxed">
-            I enjoy collaborating with teams, shipping features fast, and continuously learning modern tooling and
-            best practices. I'm excited to contribute to innovative projects that create real impact for users.
-          </p>
+
         </motion.div>
 
         <motion.div
