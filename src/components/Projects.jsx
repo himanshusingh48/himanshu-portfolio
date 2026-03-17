@@ -37,7 +37,7 @@ export default function Projects() {
               className="inline-flex items-center gap-2 text-sm text-sky-400 hover:text-sky-300 transition-colors">
               <ExternalLink size={16} /> Live Demo
             </a>
-            <a href="https://github.com/himanshusingh48/recruitment-portal" target="_blank" rel="noreferrer"
+            <a href="https://github.com/himanshusingh48/Recruitment_Portal" target="_blank" rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
               <Github size={16} /> Code
             </a>
