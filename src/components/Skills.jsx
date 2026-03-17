@@ -8,7 +8,7 @@ const skillCategories = [
   },
   {
     title: "2. Frameworks / Libraries",
-    skills: ["React.js", "Node.js"]
+    skills: ["React.js", "Node.js", "Express.js"]
   },
   {
     title: "3. Database",
